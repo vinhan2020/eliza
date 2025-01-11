@@ -5,8 +5,8 @@ import "./App.css";
 
 function Agents() {
     const navigate = useNavigate();
-    const { data: agents, isLoading } = useGetAgentsQuery()
-
+    const { data: agents, isLoading } = useGetAgentsQuery();
+    console.log("agents", agents);
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-4">
             <h1 className="text-2xl font-bold mb-8">Select your agent:</h1>

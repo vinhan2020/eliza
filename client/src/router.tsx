@@ -9,24 +9,6 @@ import Character from "./Character";
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Agents />,
-    },
-    {
-        path: "/:agentId",
-        element: <Layout />,
-        children: [
-            {
-                path: "", // This matches /:agentId exactly
-                element: <Agent />,
-            },
-            {
-                path: "chat", // This matches /:agentId/chat
-                element: <Chat />,
-            },
-            {
-                path: "character", // This matches /:agentId/chat
-                element: <Character />,
-            },
-        ],
+        element: <Chat />,
     },
 ]);
